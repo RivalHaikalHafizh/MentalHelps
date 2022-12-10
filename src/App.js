@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Age from "./components/Age";
+import Hero from "./components/Hero";
+import Education from "./components/Education";
+import Screentime from "./components/Screentime";
+import Irregulareatinghabits from "./components/Irregulareatinghabits";
+import Exercisedepressiveness from "./components/Exercisedepressiveness";
+import Missunderstanduingoverthingking from "./components/Missunderstanduingoverthingking";
+import Numerik from "./components/Numerik";
+import Predict from "./components/Predict";
 
 function App() {
+  React.useEffect(() => {
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-white">
+      <Navbar />
+      <Hero />
+      <Age />
+      <Education />
+      <Screentime/>
+      <Irregulareatinghabits/>
+      <Exercisedepressiveness/>
+      <Missunderstanduingoverthingking/>
+      <Numerik/>
+      <Predict/>
     </div>
   );
 }
