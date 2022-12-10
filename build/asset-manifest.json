@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ac6f3120.css",
+    "main.js": "/static/js/main.a772b02c.js",
+    "static/media/hero.jpg": "/static/media/hero.7e3f30c4337f59d153ce.jpg",
+    "static/media/game.jpg": "/static/media/game.7f94db41d0446a5a6300.jpg",
+    "static/media/olahraga.jpg": "/static/media/olahraga.6642adb0d26dc1094ef3.jpg",
+    "static/media/depresi.jpg": "/static/media/depresi.65a937dddc31a6008d23.jpg",
+    "static/media/pendidikan.jpg": "/static/media/pendidikan.b735fa2f93b869d86e12.jpg",
+    "index.html": "/index.html",
+    "main.ac6f3120.css.map": "/static/css/main.ac6f3120.css.map",
+    "main.a772b02c.js.map": "/static/js/main.a772b02c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac6f3120.css",
+    "static/js/main.a772b02c.js"
+  ]
+}
