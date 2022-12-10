@@ -39,9 +39,9 @@ function Hero() {
   <div className="text-center lg:text-left">
   <h1 className="text-5xl font-bold text-primary">Berhasil Login</h1>
   <p className="py-6 text-primary">
-  Akun anda akan bertahan 30 hari
+  {response.result === true? (<p1 className="py-6 text-primary">{response.pesan}</p1>):''}
   </p>
-  <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"><a href="#umur">Ayo Mulai</a></button>
+  <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"><a href="#umur">Ayo Mulai Scroll Down</a></button>
 </div>
 )}
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
@@ -78,6 +78,7 @@ function Hero() {
                     >register
                     </h6>
                   </label>
+                  {response.result === false? (<span className='text-red-500'>{response.pesan}</span>):''}
                 </div>
                 <div className="form-control mt-6">
                   <button
@@ -152,7 +153,7 @@ function Hero() {
                       sudah punya akun
                     </h6>
                   </label>
-                  {response.result === false? response.info:''}
+                  {response.result === false? (<span className='text-red-500'>{response.pesan}</span>):''}
                 </div>
                 <div className="form-control mt-6">
                   <button

@@ -43,7 +43,7 @@ function Navbar() {
           <h1 className="btn btn-ghost normal-case text-xl">MentalHelps</h1>
         </div>
         <div className="navbar-end">
-          <img className="w-20" src={mentalhelpsimg} alt="mentalhelps"/>
+          <img className="w-10" src={mentalhelpsimg} alt="mentalhelps"/>
         </div>
       </div>
     </>
