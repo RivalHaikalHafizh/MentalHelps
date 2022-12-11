@@ -29,12 +29,12 @@ function Navbar() {
             >
               <ul className="steps steps-vertical ">
                 <li className="step step-primary"><a href="#umur">Umur</a></li>
-                <li className="step "><a href="#pendidikan">Pendidikan</a></li>
-                <li className="step "><a href="#screentime">Screentime</a></li>
-                <li className="step "><a href="#makan">Makan</a></li>
-                <li className="step "><a href="#olahraga">Olahraga/Depresi</a></li>
-                <li className="step "><a href="#tersinggung">Tersinggung/overthingking</a></li>
-                <li className="step "><a href="#berapajam">berapajam</a></li>
+                <li className="step step-primary"><a href="#pendidikan">Pendidikan</a></li>
+                <li className="step step-primary"><a href="#screentime">Screentime</a></li>
+                <li className="step step-primary"><a href="#makan">Makan</a></li>
+                <li className="step step-primary"><a href="#olahraga">Olahraga/Depresi</a></li>
+                <li className="step step-primary"><a href="#tersinggung">Tersinggung/overthingking</a></li>
+                <li className="step step-primary"><a href="#berapajam">berapajam</a></li>
               </ul>
             </ul>
           </div>

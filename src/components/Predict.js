@@ -20,7 +20,7 @@ function Predict() {
             </div>
             <div className="chat chat-start">
               <div className="chat-bubble chat-bubble-secondary">
-              {prediksi === ''?'...': `${prediksi === 'Yes'?'menurutku kamu mengalami masalah kesehatan mental': 'menurutku kamu tidak mengalami masalah kesehatan mental' }`}
+              {prediksi === ''?'...': `${prediksi.hasilprediksi === 'Yes'?'menurutku kamu mengalami masalah kesehatan mental': 'menurutku kamu tidak mengalami masalah kesehatan mental' }`}
               </div>
             </div>
             <div className="chat chat-start">
@@ -33,12 +33,12 @@ function Predict() {
           {token === "" ? (
                 <button className="btn loading">login untuk bisa melakukan prediksi</button>
               ) : (
-          <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" onClick={()=>{
+          <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" onClick={(e)=>{
             predict().then((e)=>{
               setPrediksi(e.data)
             })
           }}>Prediksi kesehatan mentalku</button>
-              )}
+              )}         
           </div>
         </div>
           {prediksi === "" ?"" :(
