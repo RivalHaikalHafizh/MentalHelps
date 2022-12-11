@@ -9,6 +9,7 @@ import Exercisedepressiveness from "./components/Exercisedepressiveness";
 import Missunderstanduingoverthingking from "./components/Missunderstanduingoverthingking";
 import Numerik from "./components/Numerik";
 import Predict from "./components/Predict";
+import Foother from "./components/Foother";
 
 function App() {
   React.useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
       <Missunderstanduingoverthingking/>
       <Numerik/>
       <Predict/>
+      <Foother/>
     </div>
   );
 }
