@@ -1,19 +1,27 @@
 import React from "react";
 import { register, signin } from "../api";
 import mentalimg from "../assets/images/hero.jpg";
+// import { usePromiseTracker } from "react-promise-tracker";
 
-function Hero() {
+function Hero(props) {
   const [email, setEmail] = React.useState("");
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [response, setResponse] = React.useState("");
+  const [loading, setLoading] = React.useState(true);
   const [akses, setAkses] = React.useState(false);
+  // const { promiseInProgress } = usePromiseTracker();
 
   const daftar = {
     email: email,
     username: username,
     password: password,
   };
+
+  function loadingfunc(id){
+    const muncul = document.getElementById(`${id}`);
+    muncul.setAttribute("className", "visible");
+  }
 
   React.useEffect(() => {
     localStorage.setItem("token", JSON.stringify(response.access_token));
@@ -105,8 +113,12 @@ function Hero() {
             <div className="text-center lg:text-left">
               <h1 className="text-5xl font-bold text-primary">Register now!</h1>
               <p className="py-6 text-primary">
-                Register dan login sekrang untuk mendapatkan akses
+                Register dan login sekarang untuk mendapatkan akses
               </p>
+              <div id="register" className="hidden">
+              {loading ?(<button className="btn loading">loading data</button>):
+              (<button className="btn">Berhasil Register</button>)}
+              </div>
             </div>
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
               <div className="card-body">
@@ -162,6 +174,8 @@ function Hero() {
                       register(daftar).then((result) => {
                         setResponse(result.data);
                         console.log(result.data)
+                        loadingfunc('register')
+                        setLoading(false)
                         setAkses(true)
                       }).catch(error => {
                         setResponse(error.response.data)

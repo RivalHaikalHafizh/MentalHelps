@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = 'https://apimentalhelps.azurewebsites.net/v1'
+const url = 'https://helpsmentalapi.azurewebsites.net/v1'
 
 const options = {
     headers:{
